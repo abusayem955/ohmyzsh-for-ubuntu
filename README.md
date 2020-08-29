@@ -15,31 +15,32 @@ To making ZSH the Default Shell, Firstly it need to find out the path of the ZSH
 whereis zsh
 ```
 As we can see from the marked section of the screenshot below, the path of ZSH shell is **/usr/bin/zsh**
-Now set ZSH as the default login shell for current user
+Now set ZSH as the default login shell for current user:
 ```sh
 sudo usermod -s /usr/bin/zsh $(whoami)
 ```
 **Press the number key 2 and ZSH should create a new ~/.zshrc configuration file with the recommended settings.**
-## image
+![zshrc](https://github.com/abusayem955/ohmyzsh-for-ubuntu/blob/master/zshrc.png?raw=true "zshrc")
+
 ## Installing Oh-My-ZSH:
 To install **Oh-My-ZSH** from [githubusercontent](https://github.com/ohmyzsh/ohmyzsh), run the following command:
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 ## Installing Powerline, Powerline Fonts and Powerlevel9k Theme for ZSH:
-Run the following command to install **Powerline** and **Powerline font**
+Run the following command to install **Powerline** and **Powerline font**:
 ```sh
 sudo apt-get install powerline fonts-powerline
 ```
-Run the following command to install **Powerlevel9k ZSH** theme
+Run the following command to install **Powerlevel9k ZSH** theme:
 ```sh
 sudo apt-get install zsh-theme-powerlevel9k
 ```
-Now run the following command to enable **Powerlevel9k ZSH** theme.
+Now run the following command to enable **Powerlevel9k ZSH** theme:
 ```sh
 echo "source /usr/share/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
 ```
-Run the following command to install **ZSH Syntax Highlighting** Plugin
+Run the following command to install **ZSH Syntax Highlighting** Plugin:
 ```sh
 sudo apt-get install zsh-syntax-highlighting
 ```
